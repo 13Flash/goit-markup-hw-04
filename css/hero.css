@@ -1,0 +1,67 @@
+.hero-body {
+  background-color: #2e2f42;
+  /* 🔹 Цвет фона блока */
+
+  padding-top: 188px;
+  /* 🔹 Внутренний отступ сверху */
+
+  padding-bottom: 188px;
+  /* 🔹 Внутренний отступ снизу */
+}
+
+.hero-container {
+
+  display: flex;
+  /* 🔹 Включаем Flexbox */
+
+  flex-direction: column;
+  /* 🔹 Элементы становятся в колонку (сверху вниз) */
+
+  align-items: center;
+  /* 🔹 Выравнивание элементов по центру по горизонтали */
+
+  row-gap: 48px;
+  /* 🔹 Расстояние между элементами по вертикали */
+
+}
+
+.hero-title {
+  font-weight: 700;
+  /* 🔹 Жирный текст (bold) */
+
+  font-size: 56px;
+  /* 🔹 Размер текста */
+
+  max-width: 496px;
+  /* 🔹 Максимальная ширина блока */
+
+  line-height: 1.07;
+  /* 🔹 Высота строки */
+
+  letter-spacing: 0.02em;
+  /* 🔹 Расстояние между буквами */
+
+  color: #ffffff;
+  /* 🔹 Белый цвет текста */
+
+  text-align: center;
+  /* 🔹 Выравнивание текста по центру */
+}
+
+.hero-button {
+  padding: 16px 32px;
+  border: none;
+  font-weight: 500; /* 🔹 Толщина текста medium */
+  font-size: 16px; /* 🔹 Размер текста */
+  line-height: 1.5; /* 🔹 Высота строки */
+  letter-spacing: 0.04em;/* 🔹 Расстояние между буквами */
+  color: #ffffff; /* 🔹 Цвет текста */
+  background-color: #4d5ae5; /* 🔹 Цвет кнопки */
+  cursor: pointer; /* 🔹 Курсор становится рукой */
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+  /* 🔹 Цвет кнопки при наведении и фокусе */
+}

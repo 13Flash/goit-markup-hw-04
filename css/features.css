@@ -1,0 +1,22 @@
+.features-section {
+  background-color: #ffffff; /* 🔹 белый фон секции */
+  padding-top: 120px; /* 🔹 отступ сверху внутри секции */
+  padding-bottom: 120px; /* 🔹 отступ снизу внутри секции */
+}
+
+.block-title {
+  margin-bottom: 8px; /* 🔹 расстояние между заголовком и текстом */
+}
+
+.block-text {
+  color: #434455; /* 🔹 серый цвет текста */
+}
+
+.features-list {
+  display: flex; /* 🔹 делает элементы в одну линию */
+  gap: 24px; /* 🔹 расстояние между элементами */
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4); /* 🔹 4 колонки с учётом отступов */
+}

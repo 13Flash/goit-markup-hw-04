@@ -1,0 +1,29 @@
+.team {
+  background-color: #f4f4fd; /* 🔹 фон секции */
+}
+
+.team-list {
+  display: flex; /* 🔹 в одну строку */
+  gap: 24px; /* 🔹 расстояние между карточками */
+  justify-content: center; /* 🔹 центрирование */
+  margin: 0; /* 🔹 убрать отступ */
+  padding: 0; /* 🔹 убрать отступ */
+  list-style: none; /* 🔹 убрать точки */
+}
+
+.team-card {
+  background-color: #ffffff; 🔹 белый фон
+  display: flex;
+  flex-direction: column; /* 🔹 колонка */
+  max-width: 264px; /* 🔹 ширина карточки */
+  border-radius: 0 0 4px 4px; /* 🔹 скругление снизу */
+}
+
+.team-card-content {
+  padding: 32px 0; /* 🔹 внутренний отступ */
+  text-align: center; /* 🔹 центр текста */
+}
+
+.team .block-text {
+  color: #434455; /* 🔹 серый текст */
+}
