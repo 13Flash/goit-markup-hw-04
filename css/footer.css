@@ -1,86 +1,76 @@
 .footer {
-  background-color: #2e2f42; /* тёмный фон */
-  color: #ffffff;
-  padding: 100px 0; /* отступ сверху и снизу */
+  background-color: #2e2f42; /* 🔹 тёмный фон футера */
+  color: #ffffff; /* 🔹 основной цвет текста */
+  padding: 100px 0; /* 🔹 отступ сверху и снизу */
 }
 
-/* 2 колонки: left + right */
 .footer-container {
-  display: flex;
-  gap: 120px;              /* расстояние между колонками */
-  align-items: flex-start; /* выравнивание по верху */
+  display: flex; /* 🔹 2 колонки в ряд */
+  gap: 120px; /* 🔹 расстояние между колонками */
+  align-items: flex-start; /* 🔹 выравнивание по верху */
 }
 
-/* LEFT колонка (WebStudio + текст) */
 .footer-left {
   display: flex;
-  flex-direction: column;
-  gap: 16px;               /* расстояние между логотипом и текстом */
+  flex-direction: column; /* 🔹 логотип + текст вниз */
+  gap: 16px; /* 🔹 расстояние между элементами */
   align-items: flex-start;
 }
 
-/* RIGHT колонка (Social + иконки) */
 .footer-social {
   display: flex;
-  flex-direction: column;
-  gap: 16px;               /* расстояние между заголовком и иконками */
+  flex-direction: column; /* 🔹 заголовок + иконки вниз */
+  gap: 16px; /* 🔹 расстояние между блоками */
   align-items: flex-start;
 }
 
-/* текст в футере */
 .footer-text {
-  max-width: 264px;
+  max-width: 264px; /* 🔹 ограничение ширины текста */
   margin: 0;
-  color: #f4f4fd;
-  line-height: 1.5;
+  color: #f4f4fd; /* 🔹 светлый текст */
+  line-height: 1.5; /* 🔹 читаемость */
 }
 
-/* логотип */
 .footer-logo {
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  color: #f4f4fd;
-  text-decoration: none;
+  font-weight: 700; /* 🔹 жирный логотип */
+  font-family: "Raleway", sans-serif; /* 🔹 шрифт логотипа */
+  text-transform: uppercase; /* 🔹 ВЕРХНИЙ РЕГИСТР */
+  color: #f4f4fd; /* 🔹 цвет текста */
+  text-decoration: none; /* 🔹 убирает подчёркивание */
 }
 
 .footer-logo .logo-accent {
-  color: #4d5ae5;
+  color: #4d5ae5; /* 🔹 выделение части логотипа */
 }
 
-/* заголовок Social media */
 .footer-social-title {
-  margin: 0;
+  margin: 0; /* 🔹 убирает отступы */
 }
 
-/* список иконок */
 .footer-social-list {
-  display: flex;
-  gap: 16px;              /* расстояние между кружками */
-  list-style: none;
+  display: flex; /* 🔹 иконки в ряд */
+  gap: 16px; /* 🔹 расстояние между иконками */
+  list-style: none; /* 🔹 убирает точки */
   padding: 0;
   margin: 0;
 }
 
-/* кружки */
 .footer-social-link {
-  width: 40px;
+  width: 40px; /* 🔹 размер кружка */
   height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
+  background-color: #4d5ae5; /* 🔹 синий фон */
+  border-radius: 50%; /* 🔹 делает круг */
+  display: flex; /* 🔹 центрирует иконку */
   align-items: center;
   justify-content: center;
-  transition: 250ms;
+  transition: 250ms; /* 🔹 плавный hover */
 }
 
-/* hover эффект */
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: #31d0aa;
+  background-color: #31d0aa; /* 🔹 hover цвет */
 }
 
-/* иконки */
 .footer-social-icon {
-  fill: #f4f4fd;
+  fill: #f4f4fd; /* 🔹 цвет SVG иконки */
 }

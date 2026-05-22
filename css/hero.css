@@ -1,56 +1,56 @@
 .hero-body {
-  background-color: #2e2f42;
+  background-color: #2e2f42; /* 🔹 базовый тёмный фон */
   background-image:
     linear-gradient(
       180deg,
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    url(../images/hero-bg.jpg);
-  max-width: 1440px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  margin-left: auto;
+    url(../images/hero-bg.jpg); /* 🔹 затемнение + фон-картинка */
+  max-width: 1440px; /* 🔹 ограничение ширины */
+  background-position: center; /* 🔹 центр картинки */
+  background-repeat: no-repeat; /* 🔹 без повторов */
+  background-size: cover; /* 🔹 растягивает фон */
+  padding-top: 188px; /* 🔹 большой отступ сверху */
+  padding-bottom: 188px; /* 🔹 большой отступ снизу */
+  margin-left: auto; /* 🔹 центрирование блока */
   margin-right: auto;
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 48px;
-}
-
-.hero-button {
-  padding: 16px 32px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
-  cursor: pointer;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex; /* 🔹 flex-контейнер */
+  flex-direction: column; /* 🔹 элементы сверху вниз */
+  align-items: center; /* 🔹 центр по горизонтали */
+  row-gap: 48px; /* 🔹 расстояние между заголовком и кнопкой */
 }
 
 .hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  max-width: 496px;
-  color: #ffffff;
-  line-height: 1.07143;
-  letter-spacing: 0.02em;
-  text-align: center;
-  margin: 0;
+  font-weight: 700; /* 🔹 жирный заголовок */
+  font-size: 56px; /* 🔹 большой текст */
+  max-width: 496px; /* 🔹 ограничение ширины */
+  color: #ffffff; /* 🔹 белый текст */
+  line-height: 1.07143; /* 🔹 плотность строк */
+  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
+  text-align: center; /* 🔹 центр текста */
+  margin: 0; /* 🔹 убирает отступы */
+}
+
+.hero-button {
+  padding: 16px 32px; /* 🔹 размер кнопки */
+  border: none; /* 🔹 убирает рамку */
+  border-radius: 4px; /* 🔹 лёгкое скругление */
+  font-weight: 500; /* 🔹 средняя жирность */
+  font-size: 16px; /* 🔹 размер текста */
+  line-height: 1.5; /* 🔹 читаемость */
+  letter-spacing: 0.04em; /* 🔹 расстояние букв */
+  color: #ffffff; /* 🔹 белый текст */
+  background-color: #4d5ae5; /* 🔹 синий фон */
+  cursor: pointer; /* 🔹 курсор “рука” */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15); /* 🔹 тень кнопки */
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* 🔹 плавный hover */
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf;
+  background-color: #404bbf; /* 🔹 тёмнее при наведении */
 }

@@ -1,52 +1,49 @@
 .features-section {
   background-color: #ffffff; /* 🔹 белый фон секции */
-  padding-top: 120px; /* 🔹 отступ сверху внутри секции */
-  padding-bottom: 120px; /* 🔹 отступ снизу внутри секции */
+  padding-top: 120px; /* 🔹 отступ сверху */
+  padding-bottom: 120px; /* 🔹 отступ снизу */
 }
 
 .block-title {
-  margin-bottom: 8px; /* 🔹 расстояние между заголовком и текстом */
+  margin-bottom: 8px; /* 🔹 отступ под заголовком */
 }
 
 .block-text {
-  color: #434455; /* 🔹 серый цвет текста */
+  color: #434455; /* 🔹 серый текст */
 }
 
 .features-list {
-  display: flex; /* 🔹 делает элементы в одну линию */
+  display: flex; /* 🔹 элементы в ряд */
   gap: 24px; /* 🔹 расстояние между элементами */
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4); /* 🔹 4 колонки с учётом отступов */
-}
-.features-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  border: 1px solid #8e8f99;
+  width: calc((100% - 72px) / 4); /* 🔹 4 колонки */
 }
 
-.features-item {
-  width: calc((100% - 72px) / 4);
+.features-icon-container {
+  display: flex; /* 🔹 центрирует иконку */
+  align-items: center;
+  justify-content: center;
+  height: 112px; /* 🔹 высота блока иконки */
+  background-color: #f4f4fd; /* 🔹 светлый фон */
+  border-radius: 4px; /* 🔹 лёгкое скругление */
+  margin-bottom: 8px; /* 🔹 отступ вниз */
+  border: 1px solid #8e8f99; /* 🔹 рамка */
 }
 
 .features-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
+  font-weight: 500; /* 🔹 полужирный текст */
+  font-size: 20px; /* 🔹 размер заголовка */
+  line-height: 1.2; /* 🔹 плотность строк */
+  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
+  color: #2e2f42; /* 🔹 тёмный цвет */
+  margin-bottom: 8px; /* 🔹 отступ вниз */
 }
 
 .features-desc {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  font-size: 16px; /* 🔹 обычный текст */
+  line-height: 1.5; /* 🔹 комфортная читаемость */
+  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
+  color: #434455; /* 🔹 серый текст */
 }
