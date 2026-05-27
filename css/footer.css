@@ -1,76 +1,86 @@
 .footer {
   background-color: #2e2f42; /* 🔹 тёмный фон футера */
-  color: #ffffff; /* 🔹 основной цвет текста */
+  color: #ffffff; /* 🔹 базовый цвет текста */
   padding: 100px 0; /* 🔹 отступ сверху и снизу */
 }
 
 .footer-container {
-  display: flex; /* 🔹 2 колонки в ряд */
-  gap: 120px; /* 🔹 расстояние между колонками */
-  align-items: flex-start; /* 🔹 выравнивание по верху */
+  display: flex; /* 🔹 блоки в ряд */
+  align-items: flex-start; /* 🔹 выравнивание по верхнему краю */
 }
 
 .footer-left {
-  display: flex;
-  flex-direction: column; /* 🔹 логотип + текст вниз */
-  gap: 16px; /* 🔹 расстояние между элементами */
-  align-items: flex-start;
+  display: flex; /* 🔹 включаем flex */
+  flex-direction: column; /* 🔹 элементы вертикально */
+  gap: 16px; /* 🔹 расстояние внутри блока */
+  align-items: flex-start; /* 🔹 выравнивание влево */
+
+  margin-right: 120px; /* 🔹 расстояние до соцблока */
 }
 
 .footer-social {
-  display: flex;
-  flex-direction: column; /* 🔹 заголовок + иконки вниз */
-  gap: 16px; /* 🔹 расстояние между блоками */
-  align-items: flex-start;
+  display: flex; /* 🔹 flex контейнер */
+  flex-direction: column; /* 🔹 вертикальное расположение */
+  gap: 16px; /* 🔹 расстояние внутри */
+  align-items: flex-start; /* 🔹 выравнивание слева */
+
+  margin-right: 83px; /* 🔹 расстояние до subscribe */
 }
 
+/* ===== LOGO ===== */
+.footer-logo {
+  font-weight: 700; /* 🔹 жирный логотип */
+  font-family: "Raleway", sans-serif; /* 🔹 шрифт */
+  text-transform: uppercase; /* 🔹 ВЕРХНИЙ РЕГИСТР */
+  color: #f4f4fd; /* 🔹 светлый цвет */
+  text-decoration: none; /* 🔹 убираем подчёркивание */
+}
+
+.footer-logo .logo-accent {
+  color: #4d5ae5; /* 🔹 акцентный цвет */
+}
+
+/* ===== TEXT ===== */
 .footer-text {
-  max-width: 264px; /* 🔹 ограничение ширины текста */
-  margin: 0;
+  max-width: 264px; /* 🔹 ограничение ширины */
+  margin: 0; /* 🔹 убираем дефолтные отступы */
   color: #f4f4fd; /* 🔹 светлый текст */
   line-height: 1.5; /* 🔹 читаемость */
 }
 
-.footer-logo {
-  font-weight: 700; /* 🔹 жирный логотип */
-  font-family: "Raleway", sans-serif; /* 🔹 шрифт логотипа */
-  text-transform: uppercase; /* 🔹 ВЕРХНИЙ РЕГИСТР */
-  color: #f4f4fd; /* 🔹 цвет текста */
-  text-decoration: none; /* 🔹 убирает подчёркивание */
-}
 
-.footer-logo .logo-accent {
-  color: #4d5ae5; /* 🔹 выделение части логотипа */
-}
-
+/* 🔴 FIX 1: явная типографика (чтобы не наследовалась) */
 .footer-social-title {
-  margin: 0; /* 🔹 убирает отступы */
+  margin: 0; /* 🔹 убираем отступы */
+  font-weight: 500; /* 🔹 средняя жирность */
+  font-size: 16px; /* 🔹 размер текста */
+  line-height: 1.5; /* 🔹 высота строки */
 }
 
 .footer-social-list {
   display: flex; /* 🔹 иконки в ряд */
   gap: 16px; /* 🔹 расстояние между иконками */
-  list-style: none; /* 🔹 убирает точки */
-  padding: 0;
-  margin: 0;
+  list-style: none; /* 🔹 убираем точки */
+  padding: 0; /* 🔹 убираем внутренние отступы */
+  margin: 0; /* 🔹 убираем внешние отступы */
 }
 
 .footer-social-link {
-  width: 40px; /* 🔹 размер кружка */
-  height: 40px;
+  width: 40px; /* 🔹 размер круга */
+  height: 40px; /* 🔹 размер круга */
   background-color: #4d5ae5; /* 🔹 синий фон */
-  border-radius: 50%; /* 🔹 делает круг */
-  display: flex; /* 🔹 центрирует иконку */
-  align-items: center;
-  justify-content: center;
-  transition: 250ms; /* 🔹 плавный hover */
+  border-radius: 50%; /* 🔹 круглая форма */
+  display: flex; /* 🔹 центрирование */
+  align-items: center; /* 🔹 вертикально */
+  justify-content: center; /* 🔹 горизонтально */
+  transition: background-color 250ms; /* 🔹 плавный hover */
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: #31d0aa; /* 🔹 hover цвет */
+  background-color: #31d0aa; /* 🔹 зелёный при наведении */
 }
 
-.footer-social-icon {
-  fill: #f4f4fd; /* 🔹 цвет SVG иконки */
+.footer-social-link svg {
+  fill: #f4f4fd; /* 🔹 белые иконки */
 }

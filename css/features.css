@@ -1,49 +1,51 @@
 .features-section {
-  background-color: #ffffff; /* 🔹 белый фон секции */
-  padding-top: 120px; /* 🔹 отступ сверху */
-  padding-bottom: 120px; /* 🔹 отступ снизу */
-}
-
-.block-title {
-  margin-bottom: 8px; /* 🔹 отступ под заголовком */
-}
-
-.block-text {
-  color: #434455; /* 🔹 серый текст */
+  background-color: #ffffff; /* белый фон */
+  padding-top: 120px; /* верхний отступ секции */
+  padding-bottom: 120px; /* нижний отступ секции */
 }
 
 .features-list {
-  display: flex; /* 🔹 элементы в ряд */
-  gap: 24px; /* 🔹 расстояние между элементами */
+  display: flex; /* размещение в строку */
+  gap: 24px; /* расстояние между карточками */
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4); /* 🔹 4 колонки */
+  width: calc((100% - 72px) / 4); /* 4 равные колонки */
 }
 
+/* блок с иконкой */
 .features-icon-container {
-  display: flex; /* 🔹 центрирует иконку */
+  display: flex; /* центрирование иконки */
   align-items: center;
   justify-content: center;
-  height: 112px; /* 🔹 высота блока иконки */
-  background-color: #f4f4fd; /* 🔹 светлый фон */
-  border-radius: 4px; /* 🔹 лёгкое скругление */
-  margin-bottom: 8px; /* 🔹 отступ вниз */
-  border: 1px solid #8e8f99; /* 🔹 рамка */
+  height: 112px; /* высота блока */
+  background-color: #f4f4fd; /* светлый фон */
+  border-radius: 4px; /* скругление */
+  margin-bottom: 8px; /* отступ до заголовка */
+  border: 1px solid #8e8f99; /* рамка */
 }
 
-.features-subtitle {
-  font-weight: 500; /* 🔹 полужирный текст */
-  font-size: 20px; /* 🔹 размер заголовка */
-  line-height: 1.2; /* 🔹 плотность строк */
-  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
-  color: #2e2f42; /* 🔹 тёмный цвет */
-  margin-bottom: 8px; /* 🔹 отступ вниз */
-}
-
+/* убираем стандартные отступы браузера */
+.features-subtitle,
 .features-desc {
-  font-size: 16px; /* 🔹 обычный текст */
-  line-height: 1.5; /* 🔹 комфортная читаемость */
-  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
-  color: #434455; /* 🔹 серый текст */
+  margin: 0; /* сброс дефолтных margin */
+}
+
+/* заголовок карточки */
+.features-subtitle {
+  font-weight: 500; /* средняя жирность */
+  font-size: 20px; /* размер текста */
+  line-height: 1.2; /* плотность строк */
+  letter-spacing: 0.02em; /* расстояние между буквами */
+  color: #2e2f42; /* тёмный цвет */
+  margin-bottom: 8px; /* отступ до текста */
+}
+
+/* описание карточки */
+.features-desc {
+  font-weight: 400; /* обычный текст */
+  font-size: 16px; /* размер текста */
+  line-height: 1.5; /* читаемость */
+  letter-spacing: 0.02em; /* расстояние между буквами */
+  color: #434455; /* серый цвет */
 }

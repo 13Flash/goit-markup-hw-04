@@ -1,47 +1,95 @@
 .header {
-  border-bottom: 1px solid #e7e9fc; /* 🔹 нижняя линия у хедера */
-  padding-top: 24px; /* 🔹 верхний отступ */
-  padding-bottom: 24px; /*🔹 нижний отступ */
+  border-bottom: 1px solid #e7e9fc; /* 🔹 линия снизу */
 }
-
 
 .header-container {
-  display: flex; /* 🔹 включает flex-раскладку */
-  align-items: center; /* 🔹 выравнивает элементы по вертикали */
+  display: flex;
+  align-items: center;
 }
 
-
 .navigation {
-  flex-grow: 1; /* 🔹 навигация занимает всё свободное пространство */
-  font-weight: 500; /* 🔹 средняя жирность текста */
-  font-size: 16px; /* 🔹 размер шрифта */
-  line-height: 1.5; /* 🔹 высота строки */
-  padding-left: 76px; /* 🔹 отступ слева от логотипа */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 76px;
 }
 
 .navigation-list {
-  display: flex; /* 🔹 размещает пункты в ряд */
-  gap: 40px; /* 🔹 расстояние между пунктами меню */
- 
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+/* активная ссылка */
+.features {
+  color: #404bbf;
+}
+
+.features::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
+/* ===== CONTACTS ===== */
+
+.address {
+  font-style: normal;
+  margin-left: auto;
 }
 
 .address-list {
-  display: flex; /* 🔹 размещает контакты в ряд */
-  gap: 40px; /* 🔹 расстояние между контактами */
+  display: flex;
+  gap: 40px;
 }
 
-.nav-Features {
-  position: relative; /* 🔹 база для underline */
-  display: inline-block; /* 🔹 ширина по тексту */
+.address-link {
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #434455;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-Features::after {
-  content: ""; /* 🔹 линия под ссылкой */
-  position: absolute; /* 🔹 позиция относительно текста */
-  left: 0; /* 🔹 слева */
-  bottom: -29px; /* 🔹 ниже текста */
-  width: 100%; /* 🔹 на всю ширину */
-  height: 4px; /* 🔹 толщина */
-  background-color: #404bbf; /* 🔹 цвет */
-  border-radius: 4px; /* 🔹 скругление */
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
 }

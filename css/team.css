@@ -1,103 +1,95 @@
 .team {
-  background-color: #f4f4fd; /* 🔹 фон секции */
+  background-color: #f4f4fd; /* светло-серый фон */
 }
 
+/* список карточек (ul) */
 .team-list {
-  display: flex; /* 🔹 карточки в ряд */
-  gap: 24px; /* 🔹 расстояние между карточками */
-  justify-content: center; /* 🔹 центрирование */
-  margin: 0;
-  padding: 0;
-  list-style: none; /* 🔹 убирает точки */
+  display: flex; /* размещаем карточки в ряд */
+  gap: 24px; /* расстояние между карточками */
+  justify-content: center; /* центрируем весь ряд */
+  margin: 0; /* убираем стандартный отступ ul */
+  padding: 0; /* убираем внутренний отступ ul */
+  list-style: none; /* убираем точки списка */
 }
 
+/* сама карточка (li) */
 .team-card {
-  background-color: #ffffff; /* 🔹 белый фон */
-  display: flex;
-  flex-direction: column; /* 🔹 вертикальная структура */
-  max-width: 264px; /* 🔹 ширина карточки */
-  border-radius: 0 0 4px 4px; /* 🔹 скругление снизу */
+  background-color: #ffffff; /* белый фон карточки */
+  width: calc((100% - 72px) / 4); /* делим на 4 равные колонки */
+  border-radius: 0 0 4px 4px; /* скругляем нижние углы */
+  box-shadow: /* тень карточки */
+    0 1px 6px rgba(46, 47, 66, 0.08), /* мягкая внешняя тень */
+    0 1px 1px rgba(46, 47, 66, 0.16), /* средняя тень */
+    0 2px 1px rgba(46, 47, 66, 0.08); /* легкая нижняя тень */
 }
 
+/* блок с текстом под изображением */
 .team-card-content {
-  padding: 32px 0; /* 🔹 внутренний отступ */
-  text-align: center; /* 🔹 центр текста */
+  padding: 32px 16px; /* верх/низ 32px, слева/справа 16px */
+  text-align: center; /* центрируем текст */
 }
 
-.team .block-text {
-  color: #434455; /* 🔹 серый текст */
+/* убираем стандартные отступы у имени и роли */
+.team-member,
+.team-role {
+  margin: 0; /* сброс браузерных margin */
 }
 
-.team-item {
-  background-color: #ffffff; /* 🔹 белая карточка */
-  width: calc((100% - 72px) / 4); /* 🔹 4 колонки */
-  border-radius: 0 0 4px 4px; /* 🔹 скругление снизу */
-  box-shadow:
-    0 1px 6px rgba(46, 47, 66, 0.08),
-    0 1px 1px rgba(46, 47, 66, 0.16),
-    0 2px 1px rgba(46, 47, 66, 0.08); /* 🔹 тень карточки */
-}
 
 .team-member {
-  font-weight: 500; /* 🔹 средняя жирность */
-  font-size: 20px; /* 🔹 имя */
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42; /* 🔹 тёмный текст */
-  margin-bottom: 8px;
+  font-weight: 500; /* средняя жирность текста */
+  font-size: 20px; /* размер имени */
+  line-height: 1.2; /* плотность строк */
+  letter-spacing: 0.02em; /* расстояние между буквами */
+  color: #2e2f42; /* темно-синий цвет текста */
+  margin-bottom: 8px; /* расстояние до роли */
 }
 
 .team-role {
-  font-size: 16px; /* 🔹 должность */
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #434455; /* 🔹 серый текст */
+  font-size: 16px; /* размер текста */
+  line-height: 1.5; /* читаемость */
+  letter-spacing: 0.02em; /* межбуквенный интервал */
+  color: #434455; /* серый цвет текста */
 }
 
+/* изображение в карточке */
 .team-img {
-  display: block; /* 🔹 убирает нижний зазор у картинки */
+  display: block; /* убираем нижний зазор у img */
 }
 
+/* список соцсетей */
 .team-social-list {
-  display: flex; /* 🔹 иконки в ряд */
-  justify-content: center;
-  gap: 24px; /* 🔹 расстояние между иконками */
-  margin-top: 8px;
+  display: flex; /* иконки в ряд */
+  justify-content: center; /* центрируем иконки */
+  gap: 24px; /* расстояние между иконками */
+  margin-top: 8px; /* отступ сверху */
 }
 
+/* один элемент списка соцсетей */
 .team-social-item {
-  width: 40px;
-  height: 40px;
+  width: 40px; /* ширина круга */
+  height: 40px; /* высота круга */
 }
 
+/* ссылка-иконка соцсети */
 .team-social-link {
-  display: flex; /* 🔹 центр иконки */
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5; /* 🔹 круг */
-  border-radius: 50%;
-  transition: background-color 250ms; /* 🔹 плавный hover */
+  display: flex; /* центрируем иконку */
+  align-items: center; /* по вертикали */
+  justify-content: center; /* по горизонтали */
+  width: 100%; /* на всю ширину родителя */
+  height: 100%; /* на всю высоту родителя */
+  background-color: #4d5ae5; /* синий фон */
+  border-radius: 50%; /* делаем круг */
+  transition: background-color 250ms; /* плавный hover */
 }
 
+/* эффект при наведении */
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: #404bbf; /* 🔹 hover цвет */
+  background-color: #404bbf; /* темнее при hover */
 }
 
+/* svg иконка */
 .team-social-icon {
-  fill: #f4f4fd; /* 🔹 цвет SVG */
-}
-
-.portfolio-item {
-  width: calc((100% - 48px) / 3); /* 🔹 3 карточки */
-  transition: box-shadow 250ms;
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0 1px 6px rgba(46, 47, 66, 0.16); /* 🔹 эффект поднятия */
+  fill: #f4f4fd; /* светлый цвет иконки */
 }
